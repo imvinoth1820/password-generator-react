@@ -1,38 +1,85 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: aliceblue;
+}
+.password-generator{
+  max-width: 400px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.password-generator h2{
+  margin-bottom: 20px;
   text-align: center;
+  color: #3890ee;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-group,
+.checkbox-group,
+.generated-password{
+  margin-bottom: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.checkbox-group{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5px;
+}
+.input-group label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.input-group input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.generate-btn{
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #3890ee;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.generate-btn:hover{
+  background-color:#064a93 ;
+}
+.generated-password{
+  margin-top: 10px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  
+}
+.generated-password input{
+  border: none;
+  flex: 1;
+  padding: 10px;
+  outline: none;
+}
+.copybtn{
+  border: none;
+  padding: 5px;
+  background-color: green;
   color: white;
+  width: 70px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copybtn:hover{
+  background-color: rgb(10, 50, 10);
 }
