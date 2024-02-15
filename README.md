@@ -1,6 +1,6 @@
 # Password Generator
 
-porjectlink(https://password-generator-react-five.vercel.app/)
+[Projectlink](https://password-generator-react-five.vercel.app/)
 
 The Password Generator is a React component designed to facilitate the creation of strong and secure passwords. With intuitive controls and robust functionality, it's an essential addition to any web application requiring secure password generation.
 
